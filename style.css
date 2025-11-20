@@ -1,0 +1,115 @@
+
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #FF8F8F, #FFF1CB, #C2E2FA, #B7A3E3);
+  background-size: 300% 300%;
+  animation: bgShift 12s infinite alternate;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+@keyframes bgShift {
+  0% { background-position: left top; }
+  50% { background-position: right center; }
+  100% { background-position: left bottom; }
+}
+
+header {
+  text-align: center;
+  padding: 25px;
+  font-size: 2.2rem;
+  font-weight: 700;
+  background: rgba(255,255,255,0.3);
+  backdrop-filter: blur(7px);
+}
+
+.quiz-container {
+  width: 80%;
+  max-width: 900px;
+  background: rgba(255,255,255,0.8);
+  margin: 40px auto;
+  border-radius: 18px;
+  padding: 35px;
+  box-shadow: 0 0 30px rgba(0,0,0,0.18);
+}
+
+.question {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.options {
+  margin-top: 15px;
+}
+
+.options button {
+  width: 100%;
+  background: #ffffff;
+  border: 2px solid #B7A3E3;
+  padding: 13px;
+  border-radius: 12px;
+  margin: 8px 0;
+  cursor: pointer;
+  font-size: 1.1rem;
+  transition: 0.3s;
+}
+
+.options button:hover {
+  transform: scale(1.03);
+}
+
+/* Highlighting answers */
+.correct {
+  background: #7fff7f !important;
+  border-color: #0c8500 !important;
+}
+.wrong {
+  background: #ff6e6e !important;
+  border-color: #960000 !important;
+}
+
+.next-btn {
+  margin-top: 25px;
+  padding: 12px 22px;
+  background: #B7A3E3;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  display: none;
+}
+
+#result-popup {
+  position: fixed;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 35px;
+  border-radius: 18px;
+  text-align: center;
+  width: 80%;
+  max-width: 500px;
+  box-shadow: 0 0 18px rgba(0,0,0,0.25);
+  display: none;
+}
+
+#result-popup button {
+  margin-top: 15px;
+  padding: 12px 22px;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  background: #C2E2FA;
+}
+
+footer {
+  margin-top: auto;
+  text-align: center;
+  padding: 25px;
+  font-size: 1.2rem;
+  background: rgba(255,255,255,0.45);
+  backdrop-filter: blur(8px);
+}
