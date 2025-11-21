@@ -25,3 +25,5 @@ Built using HTML, CSS, and JavaScript, the quiz features a smooth and premium UI
 Knowledge begins with curiosity, and grows through exploration. 🌿
 
 Preview>>https://anirbanchattaraj.github.io/World-Nature-Geography-Quiz/
+
+Author>>Anirban Chattaraj
